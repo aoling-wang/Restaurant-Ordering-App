@@ -19,7 +19,7 @@ function renderMenu() {
                         <button class="add-btn" data-add="${item.id}">+</button>
                     </div>
                 </div>`
-    }).join("")
+    }).join("<div class='menu-line-break'></div>")
     itemContainer.innerHTML = menu
 }
 
