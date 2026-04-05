@@ -1,30 +1,90 @@
 export const menuArray = [
     {
-        name: "Dragon Roll",
-        ingredients: ["eel", "cucumber", "avocado", "shrimp tempura"],
-        price: 14,
-        emoji: "🐉",
+        name: "Salmon Roll",
+        restrictions: [],
+        ingredients: ["salmon"],
+        price: 12,
+        emoji: "🐟",
         id: 0,
     },
     {
+        name: "Tuna Roll",
+        restrictions: [],
+        ingredients: ["tuna"],
+        price: 12,
+        emoji: "🐠",
+        id: 1,
+    },
+    {
+        name: "Cucumber Roll",
+        restrictions: ["<i class='fa-solid fa-plant-wilt'></i>"],
+        ingredients: ["cucumber"],
+        price: 8,
+        emoji: "🥒",
+        id: 2,
+    },
+    {
+        name: "Avocado Roll",
+        restrictions: ["<i class='fa-solid fa-plant-wilt'></i>"],
+        ingredients: ["avocado"],
+        price: 10,
+        emoji: "🥑",
+        id: 3,
+    },
+    {
+        name: "Eel Avocado Roll",
+        restrictions: [],
+        ingredients: ["eel", "avocado"],
+        price: 12,
+        emoji: "🐍",
+        id: 4,
+    },
+    {
+        name: "Philadelphia Roll",
+        restrictions: [],
+        ingredients: ["salmon", "cucumber", "avocado", "cream cheese"],
+        price: 14,
+        emoji: "🔔",
+        id: 5,
+    },
+    {
+        name: "Alaska Roll",
+        restrictions: ["<i class='fa-solid fa-shrimp'></i>"],
+        ingredients: ["salmon", "cucumber", "avocado", "crab meat"],
+        price: 16,
+        emoji: "🏴󠁵󠁳󠁡󠁫󠁿",
+        id: 6,
+    },
+    {
+        name: "Dragon Roll",
+        restrictions: [],
+        ingredients: ["eel", "cucumber", "avocado", "shrimp tempura"],
+        price: 14,
+        emoji: "🐉",
+        id: 7,
+    },
+    {
         name: "California Roll",
+        restrictions: ["<i class='fa-solid fa-shrimp'></i>"],
         ingredients: ["avocado", "cucumber", "crab meat"],
         price: 12,
         emoji: "🦀",
-        id: 1
+        id: 8
     },
     {
         name: "Rainbow Roll",
+        restrictions: ["<i class='fa-solid fa-shrimp'></i>"],
         ingredients: ["avocado", "cucumber", "crab meat", "tuna", "salmon", "yellowtail"],
         price: 16,
         emoji: "🌈",
-        id: 2
+        id: 9
     },
     {
         name: "Spicy Tuna Roll",
+        restrictions: [],
         ingredients: ["tuna", "spicy mayo", "cucumber"],
         price: 12,
         emoji: "🍣",
-        id: 3
+        id: 10
     }
 ]

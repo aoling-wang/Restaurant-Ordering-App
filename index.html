@@ -14,33 +14,56 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
-        <header>
-            <h1>Kokoro Sushi</h1>
-            <h2>Serving you love with every bite</h2>
-        </header>
-        <section>  
-            <div class="container" id="menu-items">
-                <h3>Menu</h3>
-                <div id="item-container">
+        <div class="viewport">
+            <header>
+                <h1>Kokoro Sushi</h1>
+                <h2>Serving you love with every bite</h2>
+            </header>
+            <section>  
+                <div class="menu-container">
+                    <h3>Menu</h3>
+                    <div class="item-container">
+                    </div>
                 </div>
-            </div>
-            <div class="container" id="order-summary">
-                <h3>Your Order</h3>
-                <div id="order-container">
-                    <p>Your order is empty.</p>
+                <div class="order-container">
+                    <h3>Your Order</h3>
+                    <div class="summary-container">
+                        <p>Your cart is empty.</p>
+                    </div>
+                    <div class="line-break"></div>
+                    <div class="total-container">
+                        <p>Total Price:</p>
+                        <p class="total-price">$0 + (Tax)</p>
+                    </div>
+                    <button id="checkout-btn">Checkout</button>
                 </div>
+            </section>
+            <footer>
+                <nav>
+                    <a href="#">Menu</a>
+                    <a href="#"><i class="fa-solid fa-house"></i></a>
+                    <a href="#">Contact</a>
+                </nav>
+            </footer>
+            <div class="modal" >
+                <h2 class="modal-title">Payment</h2>
+                <form class="payment-form">
+                    <legend>Enter your payment details:</legend>
+                    <div class="card-num-input">
+                        <label for="card-number">Card Number:</label>
+                        <input type="text" id="card-number" name="card-number" placeholder="XXXX XXXX XXXX XXXX" required>
+                    </div>
+                    <div class="exp-date-input">
+                        <label for="expiry-date">Expiry Date:</label>
+                        <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+                    </div>
+                    <div class="cvv-input">
+                        <label for="cvv">CVV:</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="100" required>
+                    </div>
+                    <button id="pay-btn" type="submit">Pay Now</button>
+                </form>
             </div>
-        </section>
-        <footer>
-            <nav>
-                <a href="#">Home</a>
-                <a href="#">Menu</a>
-                <a href="#">Contact</a>
-            </nav>
-        </footer>
-        <div class="modal" id="payment-modal">
-        </div>
-        <div class="modal" id="survey-modal">
         </div>
 	    <script src="/JS Files/index.js" type="module"></script>
     </body>
