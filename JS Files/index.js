@@ -77,6 +77,7 @@ function handleAddBtnClick(itemId){
 
 function handleRemoveBtnClick(itemId){
     orderArray = orderArray.filter(item => item.id !== Number(itemId))
+    totalPrice.textContent = `$${orderArray.reduce((total, item) => total + item.price, 0)} + (Tax)`
     renderOrder()
 }
 
